@@ -1,8 +1,9 @@
 import * as firebase from 'firebase'
+require('.env').config()
 
 // Initialize Firebase
 var config = {
-  apiKey: "AIzaSyDxffitDs6xS6oVLw0RsNl4_BsnbLFAgWg",
+  apiKey: process.env.API_KEY,
   authDomain: "notes-app-8af0f.firebaseapp.com",
   databaseURL: "https://notes-app-8af0f.firebaseio.com",
   projectId: "notes-app-8af0f",
